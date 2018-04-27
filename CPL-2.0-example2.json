@@ -1,0 +1,50 @@
+{
+  "cpl:privacyPreferences": {
+    "user":"janedoe",
+    "cpl:allow": [
+      {
+        "cpl:dataEnd": { "dataCategory": "Geolocation" },
+        "cpl:condition": {
+          "cpl:timePeriod": {
+            "cpl:startWeekDay": "Monday",
+            "cpl:endWeekDay": "Friday",
+            "cpl:time": {
+              "cpl:startTime": "09:00:00",
+              "cpl:endTime": "18:00:00"
+            }
+          },
+          "cpl:spaceLimit": {
+            "cpl:country": "Cyprus",
+            "cpl:city": "Nicosia"
+          },
+		  "cpl:system": {
+            "cpl:batteryLevel": 30,
+          }
+        }
+      },
+      {
+        "cpl:dataEnd": { "dataCategory": "Environment" },
+        "cpl:use": {
+          "cpl:retention": "LawDefined",
+          "cpl:abstraction": "None"
+        }
+      },
+      {
+        "cpl:dataEnd": { "dataCategory": "PersonalInfo", "dataName": "Name" },
+		"cpl:dataEnd": { "dataCategory": "PersonalInfo", "dataName": "Age" },
+        "cpl:use": {
+          "cpl:retention": "LawDefined",
+          "cpl:abstraction": "None"
+        }
+      }
+    ],
+    "cpl:block": {
+	  {
+      "cpl:dataEnd": { "dataCategory": "PersonalPreferences" }
+	  },
+	  {
+      "cpl:dataEnd": { "dataCategory": "Contacts" }
+	  }
+    }
+  }
+}

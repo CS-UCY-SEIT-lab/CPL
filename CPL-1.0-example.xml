@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpl:privacyPreferences ...>
+  <cpl:allow>
+    <cpl:dataEnd dataCategory="Location"/>
+    <cpl:condition>
+      <cpl:timePeriodIn>
+        <cpl:startWeekDay>Monday</cpl:startWeekDay>
+        <cpl:endWeekDay>Friday</cpl:endWeekDay>
+        <cpl:time>
+          <cpl:startTime>08:00:00</cpl:startTime>
+          <cpl:endTime>18:00:00</cpl:endTime>
+        </cpl:time>
+      </cpl:timePeriodIn>
+      <cpl:spaceLimitIn>
+        <cpl:Country>Spain</cpl:Country>
+        <cpl:City>Madrid</cpl:City>
+      </cpl:spaceLimitIn>
+    </cpl:condition>
+  </cpl:allow>
+  <cpl:allow>
+    <cpl:dataEnd dataCategory="Environment"/>
+    <cpl:use>
+      <cpl:retention>NoRetention</cpl:retention>
+      <cpl:abstraction>None</cpl:abstraction>
+    </cpl:use>
+  </cpl:allow>
+    <cpl:allow>
+    <cpl:dataEnd dataCategory="PersonalInfo"/>
+    <cpl:use>
+      <cpl:retention>NoRetention</cpl:retention>
+      <cpl:abstraction>None</cpl:abstraction>
+    </cpl:use>
+  </cpl:allow>
+  <cpl:block>
+    <cpl:dataEnd dataCategory="PersonalPreferences"/>
+  </cpl:block>
+</cpl:privacyPreferences>
